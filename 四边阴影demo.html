@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css四边阴影</title>
+	<style>
+		/*外阴影：box-shadow:X Y Npx #color;
+
+		内阴影：box-shadow:inset X Y Npx #color;
+
+		第一个属性：阴影的X轴(可以使用负值)
+
+		第二个属性：阴影的Y轴(可以使用负值)
+
+		第三个属性：阴影的像素（大小）
+
+		第四个属性：阴影的颜色
+
+		内阴影：inset 这个可以设置内部阴影 具体看示例4*/
+
+		.shadow{
+			width: 200px;
+			height: 200px;
+			margin: 50px auto;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 10px #ccc; 	/*只设置阴影模糊半径和阴影颜色*/
+		}
+		.shadow2{
+			width: 200px;
+			height: 200px;
+			margin: 50px auto;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 10px 5px #ccc; 	/*在这个示例基础上，添加box-shadow扩展半径还可以控制阴影深度，如果取正值将加深阴影的深度，如果取负值可以向内压缩阴影，直到扩展半径等于模糊半径时，阴影会完全消失*/
+		}
+		.shadow3{
+			width: 200px;
+			height: 200px;
+			margin: 50px auto;
+			border: 1px solid #ccc;
+			box-shadow:-2px 0px 8px #f00,0px -2px 8px #000,0px 2px 8px #9e038a,2px 0px 8px #0f0;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="shadow"></div>
+
+	<div class="shadow2"></div>
+
+	<div class="shadow3"></div>
+</body>
+</html>
